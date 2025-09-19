@@ -1,6 +1,7 @@
 package ru.job4j.condition;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class VectorTest {
@@ -20,6 +21,7 @@ class VectorTest {
         String output = Vector.addVectors(x1, y1, x2, y2);
         assertThat(output).isEqualTo(expected);
     }
+
     @Test
     void whenVectors12AndMinus34ThenResultMinus22() {
         int x1 = 1, y1 = 2, x2 = -3, y2 = -4;
@@ -27,6 +29,7 @@ class VectorTest {
         String output = Vector.addVectors(x1, y1, x2, y2);
         assertThat(output).isEqualTo(expected);
     }
+
     @Test
     void whenVectorsMinus32AndMinus46ThenResultMinus78() {
         int x1 = -3, y1 = -2, x2 = -4, y2 = -6;
