@@ -7,7 +7,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 class VectorTest {
 
     @Test
-
     void whenVectors12And34ThenResult46() {
         int x1 = 1, y1 = 2, x2 = 3, y2 = 4;
         String expected = "(4, 6)";
@@ -16,7 +15,6 @@ class VectorTest {
     }
 
     @Test
-
     void whenVectors57And84ThenResult1311() {
         int x1 = 5, y1 = 7, x2 = 8, y2 = 4;
         String expected = "(13, 11)";
@@ -25,7 +23,6 @@ class VectorTest {
     }
 
     @Test
-
     void whenVectors12AndMinus34ThenResultMinus22() {
         int x1 = 1, y1 = 2, x2 = -3, y2 = -4;
         String expected = "(-2, -2)";
@@ -34,7 +31,6 @@ class VectorTest {
     }
 
     @Test
-
     void whenVectorsMinus32AndMinus46ThenResultMinus78() {
         int x1 = -3, y1 = -2, x2 = -4, y2 = -6;
         String expected = "(-7, -8)";
