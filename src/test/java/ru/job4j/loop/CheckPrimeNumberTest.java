@@ -22,20 +22,20 @@ class CheckPrimeNumberTest {
     void whenNumber0ThenFalse() {
         int number = 0;
         boolean result = CheckPrimeNumber.check(number);
-        assertThat(result).isTrue();
+        assertThat(result).isFalse();
     }
 
     @Test
     void whenNumber1ThenFalse() {
         int number = 1;
         boolean result = CheckPrimeNumber.check(number);
-        assertThat(result).isTrue();
+        assertThat(result).isFalse();
     }
 
     @Test
     void whenNumber27ThenFalse() {
         int number = 27;
         boolean result = CheckPrimeNumber.check(number);
-        assertThat(result).isTrue();
+        assertThat(result).isFalse();
     }
 }
