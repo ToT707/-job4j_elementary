@@ -19,4 +19,8 @@ public class Frame {
             System.out.println();
         }
     }
+
+    public static void main(String[] args) {
+        draw(10);
+    }
 }
