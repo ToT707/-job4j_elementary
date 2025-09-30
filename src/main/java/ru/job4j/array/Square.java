@@ -1,16 +1,16 @@
 package ru.job4j.array;
 
 public class Square {
-    public static double[] calculate(int bound) {
-        double[] res = new double[bound];
+    public static int[] calculate(int bound) {
+        int[] res = new int[bound];
         for (int i = 0; i < res.length; i++) {
-            res[i] = Math.pow(i, 2);
+            res[i] = (int) Math.pow(i, 2);
         }
         return res;
     }
 
     public static void main(String[] args) {
-        for (double n : calculate(4)) {
+        for (int n : calculate(4)) {
             System.out.println(n);
         }
     }
