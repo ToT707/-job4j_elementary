@@ -10,7 +10,7 @@ public class Square {
     }
 
     public static void main(String[] args) {
-        for (int n : calculate(4)) {
+        for (int n : calculate(5)) {
             System.out.println(n);
         }
     }
