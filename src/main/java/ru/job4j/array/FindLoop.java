@@ -12,6 +12,17 @@ public class FindLoop {
         return res;
     }
 
+    public static int indexInRange(int[] data, int element, int start, int finish) {
+        int result = -1;
+        for (int i = start; i <= finish; i++) {
+            if (data[i] == element) {
+                result = i;
+                break;
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         int[] data = {1, 8, 14, 5, 3};
         System.out.println(indexOf(data, 5));
