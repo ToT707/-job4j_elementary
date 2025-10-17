@@ -9,11 +9,9 @@ public class TwoNumberSum {
             if (array[i] + array[j] == target) {
                 result = new int[]{i, j};
                 break;
-            }
-            if (array[i] + array[j] > target) {
+            } else if (array[i] + array[j] > target) {
                 j--;
-            }
-            if (array[i] + array[j] < target) {
+            } else {
                 i++;
             }
         }
