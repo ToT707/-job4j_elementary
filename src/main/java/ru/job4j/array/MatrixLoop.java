@@ -9,8 +9,8 @@ public class MatrixLoop {
         };
         for (int row = 0; row < array.length; row++) {
             for (int cell = 0; cell < array[row].length; cell++) {
-                int val = array[row][cell];
-                System.out.println(val);
+                int value = array[row][cell];
+                System.out.println(value);
             }
         }
     }

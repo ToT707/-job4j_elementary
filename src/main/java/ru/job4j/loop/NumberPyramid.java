@@ -1,16 +1,16 @@
 package ru.job4j.loop;
 
 public class NumberPyramid {
-    public static void draw(int n) {
-        for (int i = 1; i <= n; i++) {
-            for (int p = i; p < n; p++) {
+    public static void draw(int height) {
+        for (int i = 1; i <= height; i++) {
+            for (int spaces = i; spaces < height; spaces++) {
                 System.out.print(" ");
             }
-            for (int pp = 1; pp <= i; pp++) {
-                System.out.print(pp);
+            for (int directOrder = 1; directOrder <= i; directOrder++) {
+                System.out.print(directOrder);
             }
-            for (int ob = i - 1; ob > 0; ob--) {
-                System.out.print(ob);
+            for (int reverseOrder = i - 1; reverseOrder > 0; reverseOrder--) {
+                System.out.print(reverseOrder);
             }
             System.out.println();
         }

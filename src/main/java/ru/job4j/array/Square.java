@@ -2,11 +2,11 @@ package ru.job4j.array;
 
 public class Square {
     public static int[] calculate(int bound) {
-        int[] res = new int[bound];
-        for (int i = 0; i < res.length; i++) {
-            res[i] = (int) Math.pow(i, 2);
+        int[] result = new int[bound];
+        for (int i = 0; i < result.length; i++) {
+            result[i] = (int) Math.pow(i, 2);
         }
-        return res;
+        return result;
     }
 
     public static void main(String[] args) {
